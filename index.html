@@ -104,6 +104,8 @@
                         </ul>
                     </div>
                 </div>
+                
+
                 <!-- FOOTER -->
             </div>
 
@@ -247,13 +249,23 @@
         
 
         function ClickConfigure(){
+                const heartOnclick = document.querySelector('#Heart_Onclick');
+                const heartClick = document.querySelector('#Heart_Click');
                 Perfil.addEventListener('click', ()=> {
                     if(Configure.classList.contains('inactive')){
                         Configure.classList.remove('inactive');
+                        if(heartOnclick.classList.contains('inactive')){
+                            heartClick.classList.toggle('inactive');
+                        }
+                        
                         Arrow_img_scroll.classList.add('inactive');
                         LoadTikTok.classList.add('inactive')
+                        
                     }else{
-                        Arrow_img_scroll.classList.remove('inactive')
+                        Arrow_img_scroll.classList.remove('inactive');
+                        if(heartOnclick.classList.contains('inactive')){
+                            heartClick.classList.remove('inactive');
+                        }
                         Configure.classList.add('inactive');
                     }
                 });
