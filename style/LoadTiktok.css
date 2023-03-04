@@ -1,0 +1,62 @@
+
+#LoadTikTok{
+    position: absolute;
+    z-index: 1;
+    left: 120px;
+}
+.TikTokLoad{
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+
+.TikTokLoad::before,
+.TikTokLoad::after{
+    position: absolute;
+    content: " ";
+    top: 6px;
+    background-color: #ff3e9e;
+    width: 28px;
+    height: 28px;
+    border-radius:20px;
+    mix-blend-mode: multiply;
+    animation: TikTokLoad 2s linear infinite;
+}
+
+.TikTokLoad::after{
+    background-color: #4de8f4;
+    animation-delay: 1s;
+}
+
+@keyframes TikTokLoad {
+    0%,
+    100% {
+        top: 6px;
+        left: 0px;
+        width: 28px;
+        height: 28px;
+        z-index: 0;
+        transform: scale(1);
+    }
+    25% {
+        top: 0px;
+        height: 40px;
+        width: 40px;
+        z-index: 1;
+        left: 20px;
+        transform: scale(1);
+    }
+    50% {
+        top: 6px;
+        width: 28px;
+        height: 28px;
+        left: 48px;
+    }
+    75% {
+        top: 8px;
+        width: 24px;
+        height: 24px;
+        left: 26px;
+        transform: scale(1);
+    }
+}

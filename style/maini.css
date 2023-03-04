@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+.body{
+    display: grid;
+    height: 95%;
+    place-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.container{
+    height: 400px;
+    width: 300px;
+    
+    
+}
+.container .wrapper {
+   
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+    background: #fff;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(87,82,87,1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(87,82,87,1);
+    box-shadow: 0px 0px 16px 0px rgba(87,82,87,1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* BARRA TAREA DE ARRIBA PHONE */
+.container .wrapper .barra-icons__tarea{
+    display: flex;
+    position:absolute;
+    top: 4px;
+    z-index: 3;
+    right: 10px;
+    
+}
+.container .wrapper .barra-icons__tarea .list_icons{
+    display: flex;
+    list-style: none;
+}
+
+.container .wrapper .barra-icons__tarea .list_icons img{
+    width: 15px;
+    margin-right:10px ;
+}
+/* BARRA TAREA DE ARRIBA PHONE */
+
+
+
+/* IMAGEN APP */
+.container_Icons_app .list_app{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    z-index: 3;
+    list-style: none;
+}
+
+.container_Icons_app .fecha{
+    position: absolute;
+    font-size: 16px;
+    left: 67px;
+    top: 129px;
+    z-index: 3;
+}
+
+.container_Icons_app  .Hora-Principal{
+    top: 70px;
+    left: 89px;
+    position: absolute;
+    font-size:50px;
+    z-index: 3;
+}
+
+.container_Icons_app .list_app .App-img__TikTok{
+    width: 50px;
+    transition: .2s all ease-in;
+}
+.container_Icons_app .list_app .App-img__TikTok:hover{
+    transform: scale(1.1);
+    transition: 0.2s all ease-in;
+}
+/*.container_Icons_app .list_app .App-img__TikTok:active{
+    margin-left: 100px;
+    margin-top: 150px;
+    transform: scale(5);
+    
+    transition: 0.2s ;
+
+}*/
+/* IMAGEN APP*/
+
+
+/* IMAGEN DE FONDO */
+
+.container .wrapper .InicioPhone .ImagenFondo{
+    width: 300px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+/* IMAGEN DE FONDO */
+
+
+.container .wrapper header .header{
+    position: absolute;
+    top: 0px;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid gray;
+    left: 0;
+}
+
+/* NAVBAR TIKTOK */
+.container .wrapper header .header .header_Container_left{
+    list-style: none;
+    display: inline-block;
+}
+
+.container .wrapper header .header .header_Container_right{
+    list-style: none;
+    margin: 0px 120px;
+    display: flex;
+}
+
+.container .wrapper header .header .header_Container_right .header-container_items .Perfil{
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.container .wrapper header .header .header_Container_right .header-container_items .Cargar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:10px 10px 10px 20px;
+    border: 1px solid rgb(111, 106, 106);
+    text-decoration: none;
+    color: black;
+}
+
+.container .wrapper header .header .header_Container_right .header-container_items .tiktok-qeydvm-StyledPlusIcon{
+    position: absolute;
+    width: 25px;
+    top: 23px;
+} 
+
+.container .wrapper header .header .header_Container_right .header-container_items .tiktok-19qintf-StyledInboxIconActive{
+    position: absolute;
+    top: 10px;
+    color: black;
+}
+
+.container .wrapper .Icons_TikTok{
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 40px;
+    z-index: 1;
+
+}
+/* NAVBAR TIKTOK */
+
+/* IMG TIKTOK */
+.container .wrapper .Img-Animals{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; 
+    transition: all 5s ease-out;
+}
+
+/* IMG TIKTOK */
+
+
+/* HIDDEN ELEMET */
+.hidden{
+    visibility: hidden;
+    transform: translateY(150px);
+    transition: all 4s ease-out;
+}
+/* HIDDEN ELEMENT */
+
+
+/* INACTIVE ELEMENT */
+.inactive{
+    display: none;
+}
+/* INACTIVE ELEMENT */
+
+
+
+/* LIKE HEART */
+.container .like .heart_onclick{
+    position: absolute;
+    width: 40px;
+    right: 10px;
+    z-index: 0;
+}
+
+.container .like .heart_click{
+    position: absolute;
+    width: 40px;
+    right: 10px;
+    z-index: 1;
+}
+/* LIKE HEART */
+
+
+
+/* CONFIGURE CARD */
+#configure .configure-container_list{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 96px 0px;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255 255 255);
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#configure .configure-container_list .list_items{
+    padding: 10px 16px;
+}
+
+#configure .configure-container_list .list_items a{
+    color: black;   
+    text-decoration: none;
+}
+
+#configure .configure-container_list .list_items:nth-child(5){
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+#configure .configure-container_list .list_icons{
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 20px;
+}
+/* CONFIGURE CARD */
+
+/* FOOTER */
+.list-container_list-footer{
+    position: absolute;
+    bottom: 10px;
+    height: 50px;
+    left: 20px;
+    z-index: 2;
+    width: 100%;
+    padding: 30px;
+}
+
+.list-container_list-footer .list-footer{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: calc(100% - 55px);
+    margin-left: 5px;
+}
+
+.list-container_list-footer .scroller{
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    background-color: #d2294c;
+    position: absolute;
+    z-index: 1;
+    bottom: 75px;
+    left: 10px;
+    cursor: pointer;
+
+}
+
+.list-container_list-footer .scroller::before{
+    content: "";
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    bottom: 0.5px;
+}
+
+.list-container_list-footer .scroller span{
+    background-image: url('https://pandorafms.com/wp-content/uploads/2021/11/down-arrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}
+
+.list-container_list-footer .list-footer .list-footer_items img{
+    width: 20px;
+}
+
+.list-container_list-footer .list-footer .list-footer_items .menu_phone{
+    transition: all 0.3s linear;
+}
+.list-container_list-footer .list-footer .list-footer_items .menu_phone:hover{
+    -webkit-box-shadow: 14px 10px 51px 4px rgba(255,255,255,1);
+    -moz-box-shadow: 14px 10px 51px 4px rgba(255,255,255,1);
+    box-shadow: 14px 10px 51px 4px rgb(255, 250, 250);
+    border-radius: 50%;
+    transform: scale(1.2);
+    transition: 0.3s all linear;
+}
+.list-container_list-footer .list-footer .list-footer_items .arrow-left_phone{
+    transition: all 0.3s linear;
+    
+}
+
+.list-container_list-footer .list-footer .list-footer_items .arrow-left_phone:hover{
+    -webkit-box-shadow: 14px 10px 51px 4px rgba(255,255,255,1);
+    -moz-box-shadow: 14px 10px 51px 4px rgba(255,255,255,1);
+    box-shadow: 14px 10px 51px 4px rgb(255, 250, 250);
+    transform: scale(1.2);
+    transition: 0.3s all linear;
+}
+
+.list-container_list-footer .list-footer .list-footer_items .objet_phone{
+    transition: all 0.3s linear;
+    
+}
+
+.list-container_list-footer .list-footer .list-footer_items .objet_phone:hover{
+    -webkit-box-shadow: 14px 10px 51px 4px rgba(255,255,255,1);
+    -moz-box-shadow: 14px 10px 51px 4px rgba(255,255,255,1);
+    box-shadow: 14px 10px 51px 4px rgb(255, 250, 250);
+    transform: scale(1.2);
+    transition: 0.3s all linear;
+}
+
+/* FOOTER */
+
+
